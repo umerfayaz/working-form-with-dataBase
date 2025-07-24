@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+.main-container {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 0px;
+  border-bottom: 0.1px solid gainsboro;
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 300px;
+  box-shadow: 0 0px 16px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+  position: relative;
+
+  /* 👇 Decorative background inside container */
+  background-image: 
+    linear-gradient(90deg, #f0f0f0 1px, transparent 1px),
+    linear-gradient(#f0f0f0 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-repeat: repeat;
+}
+
+
+/* Logo */
+.logo-container img#Saylani-logo {
+  width: 350px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+
+/* Mini container layout updated */
+.mini-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* Registration heading centered */
+.registration {
+  font-size: 34px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 15px;
+  /* margin: 0 auto; */
+  flex: 1;
+  text-align: center;
+}
+
+/* Place small-logos to the far left */
+.small-logos {
+  order: -100; /* moves it before heading visually */
+  margin-right: 15px;
+}
+
+
+.small-logos img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease;
+}
+
+.small-logos img:hover {
+  transform: scale(1.1);
+}
+
+/* Student portal button aligned right */
+#Student-portal {
+  background-color: white;
+  color: #0066cc;
+  width: 150px;
+  border: 1.5px solid #0066cc;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#Student-portal:hover {
+  background-color: whitesmoke;
+}
+
+/* Paragraph centered */
+.para1 {
+  text-align: center;
+}
+
+.para1 p {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+/* Buttons section centered */
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: -6px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  background-color: rgb(248, 245, 245);
+  color: #0066cc;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 0px;
+  font-size: 14px;
+  font-weight: 1000px;
+  cursor: pointer;
+
+  transition: background 0.3s ease;
+  margin-top: 19px;
+}
+
+.buttons button:hover {
+  background-color: white;
+}
+
+.registration-form {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 40px 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  justify-content: space-between ;
+}
+
+/* Rows flexed horizontally, wrap on small screens */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  flex: 1 1 45%; /* Grow + shrink responsively */
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #0056b3;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  padding: 18px 20px; /* Even more space inside */
+  font-size: 18px;     /* Bigger text */
+  border: 2px solid #a6ce39;
+  border-radius: 8px;
+  color: #333;
+  transition: border 0.2s ease;
+}
+
+
+/* Special border for the proficiency select */
+.form-group select#proficiency {
+  border: 1.8px solid #007bff;
+}
+
+/* Focus effect */
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.last-para p {
+  font-size: 15px;
+  color: #666;
+  margin: 7px 0 8px;
+}
+
+
+
+/* Container holding the CAPTCHA and button */
+.submit-section {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* reCAPTCHA style */
+.g-recaptcha {
+    margin-bottom: 20px;
+    margin-right: 770px;
+}
+
+/* Styled Submit Button */
+.submit-btn {
+    width: 1100px;
+    background-color: #69a7d3; /* Light blue like in the image */
+    color: white;
+    padding: 12px 0;
+    border: none;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #5a94c2; /* Slightly darker blue on hover */
+}
+
+#id-form{
+    width: 800px;
+    margin-left: 385px;
+    margin-top: 50px;
+    align-items: center;
+  /* display: none; */
+}
+
+#results{
+    width: 1000px;
+    align-items: center;
+  /* display: none; */
+}
+
+#cnic-btn{
+    width: 700px;
+    background-color: #69a7d3; /* Light blue like in the image */
+    color: white;
+    padding: 12px 0;
+    border: none;
+    margin-bottom: 100px;
+    margin-left: 60px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.roll-form{
+    width: 800px;
+    margin-left: 380px;
+    margin-top: 30px;
+}
+
+#roll-btn{
+    width: 700px;
+    background-color: #69a7d3; /* Light blue like in the image */
+    color: white;
+    padding: 12px 0;
+    border: none;
+    margin-bottom: 100px;
+    margin-left: 60px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Animation transitions */
+.fade-in {
+  animation: fadeIn 0.5s ease-in forwards;
+}
+.fade-out {
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(10px); }
+}
+
+/* Optional: smoother button */
+#goBackBtn {
+  background-color: #0088ff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+#goBackBtn:hover {
+  background-color: #005fa3;
+}
+
+
+
+
+
+
