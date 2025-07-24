@@ -30,9 +30,3 @@ This is a fully functional contact form built using **HTML**, **CSS**, **JavaScr
 - Firebase (Realtime Database)
 
 ---
-
-## 🛠️ How to Run Locally
-
-1. Clone the repository  
-```bash
-git clone https://github.com/umerfayaz/working-form-with-dataBase.git
